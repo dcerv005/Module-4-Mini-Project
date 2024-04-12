@@ -1,5 +1,3 @@
-from book import Book
-from user import User
 import UI
 
 
