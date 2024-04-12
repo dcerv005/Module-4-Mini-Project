@@ -8,13 +8,17 @@ while True:
     try:
         choice = int(input("Please pick an option to continue: "))
         if choice not in [1, 2, 3, 4, 5]:
-            raise ValueError("Invalid option. (1-5)")
-        elif choice == 5:
-            print("You are now exiting the Library Management System...")
-            break
+            raise ValueError("Invalid option. (1-5)")        
         elif choice == 1:
             UI.book_operations()
         elif choice == 2:
             UI.user_operations()
+        elif choice == 3:
+            pass
+        elif choice == 4:
+            pass
+        elif choice == 5:
+            print("You are now exiting the Library Management System...")
+            break
     except Exception as e:
         print(e)
