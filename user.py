@@ -12,12 +12,12 @@ class User:
         self.user_list[library_ID]['Borrowed Books'].append(book_title)
 
     def return_book(self, library_ID, book_title):
-        self.user_list[library_ID]['Borrowed Book'].remove(book_title)
+        self.user_list[library_ID]['Borrowed Books'].remove(book_title)
 
     
     def user_info(self, library_ID):
         if library_ID in self.user_list:
-            print(f"User information:\n\tLibrary ID {library_ID}\n\tName {self.user_list[library_ID]['Name']}\n\tBorrowed Books {self.user_list[library_ID['Borrowed Books']]}")
+            print(f"User information:\n\tLibrary ID: {library_ID}\n\tName: {self.user_list[library_ID]['Name']}\n\tBorrowed Books: {self.user_list[library_ID]['Borrowed Books']}")
         else:
             print("User not found.")
     def display_users(self):
