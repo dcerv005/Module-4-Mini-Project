@@ -14,11 +14,12 @@ while True:
         elif choice == 2:
             UI.user_operations()
         elif choice == 3:
-            pass
+            UI.author_operations()
         elif choice == 4:
-            pass
+            UI.genre_operations()
         elif choice == 5:
             print("You are now exiting the Library Management System...")
             break
     except Exception as e:
         print(e)
+

@@ -43,13 +43,3 @@ class Book:
         else:
             print("No books found.")
 
-class Author(Book):
-    def __init__(self):
-        super().__init__()
-        self.author_list=[]
-
-    def add_author(self, author, biography):
-        for IBSN, dict in self.library.items():
-            for authors in self.library[IBSN]['Author']:
-                self.author_list.append((authors, ""))
-
